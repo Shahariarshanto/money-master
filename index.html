@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com" defer></script>
+  </head>
+  <body>
+    <header class="flex space-x-4 justify-center items-center">
+      <h1 class="text-5xl font-bold text-green-600 text-center my-8">
+        Money Master
+      </h1>
+      <img src="./media/money.png" class="w-12 h-12" alt="logo" />
+    </header>
+    <main class="container mx-auto">
+      <section class="grid md:grid-cols-2 bg-red-500">
+        <img
+          class="max-w-full my-auto"
+          src="./media/mirza-babic-eYZpTMc7hno-unsplash.jpg"
+          alt="Money"
+        />
+        <div
+          class="flex flex-col justify-center items-center bg-gray-400 space-y-5"
+        >
+          <h3 class="text-3xl">Income</h3>
+          <div class="flex">
+            <h5>Income:</h5>
+            <input id="income" type="text" />
+          </div>
+          <h3 class="text-3xl">Expenses</h3>
+          <div>
+            <div class="flex">
+              <h5>Food:</h5>
+              <input id="food" type="text" />
+            </div>
+          </div>
+          <div class="flex">
+            <h5>Rent:</h5>
+            <input id="rent" type="text" />
+          </div>
+          <div class="flex">
+            <h5>Clothes:</h5>
+            <input id="clothes" type="text" />
+          </div>
+          <button
+            id="calculate-btn"
+            class="bg-green-700 hover:bg-green-800 text-white rounded font-bold py-3 px-12"
+          >
+            Calculate
+          </button>
+          <div>
+            <h3 class="text-2xl font-bold">
+              Total Expenses: <span id="total-expense">000</span>
+            </h3>
+            <h3 class="text-2xl font-bold">
+              Balance: <span id="balance">000</span>
+            </h3>
+          </div>
+          <div class="flex items-center space-x-2">
+            <p>Save:</p>
+            <input id="save-input" type="text" />
+            <p>%</p>
+            <button
+              id="save-btn"
+              class="bg-green-700 hover:bg-green-800 text-white rounded font-bold py-2 px-8"
+            >
+              Save
+            </button>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold">
+              Saving Amount: <span id="save-amount">000</span>
+            </h3>
+            <h3 class="text-2xl font-bold">
+              Remaining Balance: <span id="remaining">000</span>
+            </h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script/app.js"></script>
+  </body>
+</html>
